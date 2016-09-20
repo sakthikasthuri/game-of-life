@@ -2,12 +2,12 @@ public:
 GameBoard();
 ~GameBoard();
 
-bool isNeighbor(Cell,Cell);
+/*bool isNeighbor(Cell,Cell);
 bool isEdge(Cell);
 bool isCorner(Cell);
 bool isEmpty(Cell);
-bool isFull(Cell);
-int countNeighbors(Cell);
+bool isFull(Cell);*/
+int countNeighbors(int i, int j);
 bool setMode();
 int cornerCount();
 int edgeCount();
