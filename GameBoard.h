@@ -2,7 +2,6 @@ public:
 GameBoard();
 ~GameBoard();
 
-blah b
 /*bool isNeighbor(Cell,Cell);
 bool isEdge(Cell);
 bool isCorner(Cell);
