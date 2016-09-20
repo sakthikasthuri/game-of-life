@@ -5,6 +5,7 @@
 #include <string>
 using namespace std;
 
+public main(int argc, char** argv){
 cout << "Welcome to the Game of Life!" << endl;
 cout << "Would you like to start by providing a file to run the simulation or would you like a random assignment?"<< endl;
 cout << "Please enter 'file' or 'random' to start the setup." << endl;
@@ -20,4 +21,7 @@ else if(answer == "random")
   cin >> int i;
   cout << "Please enter the number of columns you'd like in your grid: "<<endl;
   cin >> int j;
+  cout << "Please enter a number and number between 0 and 1 to represent the density of filled spaces in your grid: "<< endl;
+  cin >> float k;
+}
 }
