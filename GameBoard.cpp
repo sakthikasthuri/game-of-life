@@ -16,5 +16,13 @@ int GameBoard::countNeighbor(int i, int j){
             if(board[k][l] == 'X')
               { ++count;}
           }
-    }
+      }
+}
+int GameBoard::getRows(){
+  return rows;
+  //want this functionality. need to refine
+}
+int GameBoard::getColumns(){
+ return columns;
+  
 }
