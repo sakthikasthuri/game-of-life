@@ -7,7 +7,7 @@ bool isEdge(Cell);
 bool isCorner(Cell);
 bool isEmpty(Cell);
 bool isFull(Cell);
-bool countNeighbors(Cell);
+int countNeighbors(Cell);
 bool setMode();
 int cornerCount();
 int edgeCount();
