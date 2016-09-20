@@ -24,5 +24,11 @@ int GameBoard::getRows(){
 }
 int GameBoard::getColumns(){
  return columns;
-  
+}
+char GameBoard::getCell(int i, int j){
+  return board[i][j];
+}
+char GameBoard::setCell(int i, int j, char k){
+  return board[i][j] = k;
+}
 }
