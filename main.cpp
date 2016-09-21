@@ -35,8 +35,8 @@ else if(answer == "random")
   int boundary = stoi(strboundary,nullptr);
   
   cout<< "To determine the type of display, please enter: 1 for Pause, 2 for Enter or 3 for File." << endl;
-  cin >> string strmode;
-  int mode = stoi(strmode,nullptr);
+  cin >> string strMode;
+  int mode = stoi(strMode,nullptr);
   
   if((boundary == 1 || boundary == 2 || boundary == 3) && (mode == 1 || mode == 2 || mode == 3)){
     gL.GameOfLife(boundary,mode,numRow,numColumn,density);}
