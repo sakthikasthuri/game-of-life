@@ -19,16 +19,26 @@ if(answer == "file")
 else if(answer == "random")
 {
   cout << "Please enter the number of rows you'd like in your grid: "<<endl;
-  cin >> int numRow;
+  cin >> string strnumRow;
+  int numRow = stoi(strnumRow,nullptr);
+  
   cout << "Please enter the number of columns you'd like in your grid: "<<endl;
-  cin >> int numCol;
+  cin >> string strnumCol;
+  int numCol = stoi(strnumCol,nullptr);
+  
   cout << "Please enter a number and number between 0 and 1 to represent the density of filled spaces in your grid: "<< endl;
-  cin >> float density;
+  cin >> string strdensity;
+  float density = stof(strdensity,nullptr);
+  
   cout << "To determine the type of boundary, please enter: 1 for Classic, 2 for Doughnut or 3 for Mirror."<< endl;
-  cin >> int boundary;
+  cin >> string strboundary;
+  int boundary = stoi(strboundary,nullptr);
+  
   cout<< "To determine the type of display, please enter: 1 for Pause, 2 for Enter or 3 for File." << endl;
-  cin >> int mode;
-  if((boundary == 1 || boundary == 2 || boundary == 3) && (boundary == 1 || boundary == 2 || boundary == 3)){
+  cin >> string strmode;
+  int mode = stoi(strmode,nullptr);
+  
+  if((boundary == 1 || boundary == 2 || boundary == 3) && (mode == 1 || mode == 2 || mode == 3)){
     gL.GameOfLife(boundary,mode,numRow,numColumn,density);}
   else{ throw invalid_argument("Please enter the specified integers");}
 } 
